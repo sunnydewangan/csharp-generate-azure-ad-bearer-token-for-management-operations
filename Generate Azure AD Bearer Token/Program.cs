@@ -7,9 +7,9 @@ namespace Generate_Azure_AD_Bearer_Token
     {
         static void Main(string[] args)
         {
-            string _tenantID = "72f988bf-86f1-41af-91ab-2d7cd011db47"; //Active Directory ID
-            string _applicationID = "55e5570e-71ad-4765-b8ff-413764920f80"; // Your AD Application ID a.k.s Client ID
-            string _applicationSecret = "1LFzpJIoRbhwxEgOEBLA4VmsCDNggR/Sbbofu9RUyGw="; // Your AD Application Secret a.k.s. Client Secret
+            string _tenantID = "{Your Tenant ID}"; //Active Directory ID
+            string _applicationID = "{Application ID}"; // Your AD Application ID a.k.s Client ID
+            string _applicationSecret = "{Application Secret}"; // Your AD Application Secret a.k.s. Client Secret
 
             string BearerToken = CreateAccessToken(_tenantID, _applicationID, _applicationSecret);
             Console.WriteLine("Bearer " + BearerToken);
